@@ -37,7 +37,7 @@ with col1:
     st.image(circular_image)
     st.subheader("Jayaprakash S")
     st.write(
-        "- MBA student at VIT University"
+        "- MBA student at VIT BS"
     )
     st.write("\n")
     st.subheader("Contact Information", anchor=False)
