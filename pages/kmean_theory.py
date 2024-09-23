@@ -31,7 +31,7 @@ st.write('''
         -a given data set. Within the sum of squares (WSS) is defined as the sum of the squared distance between each 
         -member of the cluster and its centroid.
         ''')
-st.image("images/s_1.png", width=400, use_column_width=False)
+st.image("images/s_1.png")
 
 st.write('''
         Here, WSS is on the y-axis and number of clusters on the x-axis.
@@ -42,7 +42,7 @@ st.write('''
         We can randomly initialize two points called the cluster centroids. 
         Here, C1 and C2 are the centroids assigned randomly.
         ''')
-st.image("images/s_2.png", width=400, use_column_width=False)
+st.image("images/s_2.png")
 
 st.subheader("Step 3:")
 st.write('''
