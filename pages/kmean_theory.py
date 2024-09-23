@@ -49,7 +49,7 @@ st.write('''
         Now the distance of each location from the centroid is measured, and each data point is assigned to the centroid
         , which is closest to it. 
         ''')
-st.image("images/s_3.png", width=400, use_column_width=False)
+st.image("images/s_3.png")
 
 st.subheader("Step 4:")
 st.write('''
@@ -60,7 +60,7 @@ st.subheader("Step 5:")
 st.write('''
         Reposition the random centroid to the actual centroid. 
         ''')
-st.image("images/s_4.png", width=400, use_column_width=False)
+st.image("images/s_4.png")
 
 st.subheader("Step 6:")
 st.write('''
@@ -71,14 +71,14 @@ st.subheader("Step 7:")
 st.write('''
         Reposition the random centroid to the actual centroid. 
         ''')
-st.image("images/s_5.png", width=400, use_column_width=False)
+st.image("images/s_5.png")
 
 st.subheader("Step 8:")
 st.write('''
         Once the cluster becomes static, the k-means algorithm is said to be converged. 
         The final cluster with centroids c1 and c2 is as shown below:
         ''')
-st.image("images/s_6.png", width=400, use_column_width=False)
+st.image("images/s_6.png")
 
 st.header("Following is the Data Dictionary for Credit Card dataset")
 st.markdown("""
