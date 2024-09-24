@@ -79,4 +79,4 @@ if 'shared_df_page_1' and 'shared_df_org_page_1' in st.session_state:
     st.plotly_chart(fig)
 
 else:
-    st.write("No DataFrame found. Please run Page 1 first.")
+    st.write("No DataFrame found. Please upload the dataset in Exploratory data analysis🙂.")

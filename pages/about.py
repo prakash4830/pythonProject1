@@ -30,7 +30,7 @@ developers = [
 st.markdown("<h3 style='text-align: center;'>About the Developers</h3>", unsafe_allow_html=True)
 
 # Create two columns for the profiles
-col1, col2 = st.columns(2, gap="large", vertical_alignment="center")
+col1, col2 = st.columns(2, gap="large")
 with col1:
     image = Image.open("images/pic_1.png")
     circular_image = make_circle(image.resize((230, 260)))
@@ -55,7 +55,7 @@ with col1:
     st.subheader("Qualifications", anchor=False)
     st.write(
         """
-        - Computer Science and Engineering 
+        - Computer Science and Engineering 🧑🏻‍💻
 
         """
     )
@@ -104,28 +104,48 @@ with col2:
     st.image(circular_image)
     st.subheader("Sandeep Murugasan")
     st.write(
-        "MBA student at VIT University"
+        "- MBA student at VIT University"
+    )
+    st.write("\n")
+    st.subheader("Contact Information", anchor=False)
+    st.write(
+        """ 
+        - **Mobile:** +91-9025682538
+        - **Email:** [sandeepmurugesan16@gmail.com](mailto:sandeepmurugesan16@gmail.com)
+        - **LinkedIn:** [likedin.com/in/sandeepmurugesan](https://www.likedin.com/in/sandeepmurugesan)
+        """
     )
 
-        # --- EXPERIENCE & QUALIFICATIONS ---
+    # --- EXPERIENCE & QUALIFICATIONS ---
     st.write("\n")
-    st.subheader("Experience & Qualifications", anchor=False)
+    st.subheader("Qualifications", anchor=False)
     st.write(
         """
-        - 7 Years experience extracting actionable insights from data
-        - Strong hands-on experience and knowledge in Python and Excel
-        - Good understanding of statistical principles and their respective applications
-        - Excellent team-player and displaying a strong sense of initiative on tasks
+        - Bachelor of Commerce 
+
+        """
+    )
+    st.subheader("Internship", anchor=False)
+    st.write(
+        """
+        - 3 months of Tax Intern at Kumar and Raj chartered Accountant
+
         """
     )
     # --- SKILLS ---
     st.write("\n")
-    st.subheader("Hard Skills", anchor=False)
+    st.subheader("Technical Skills", anchor=False)
     st.write(
         """
-        - Programming: Python (Scikit-learn, Pandas), SQL, VBA
-        - Data Visualization: PowerBi, MS Excel, Plotly
-        - Modeling: Logistic regression, linear regression, decision trees
-        - Databases: Postgres, MongoDB, MySQL
+        - **Programming:** Python 
+        - **Data Visualization:** PowerBI
+        - **Databases:** MySQL
+        """
+    )
+    st.write("\n")
+    st.subheader("Other Interest and Hobbies", anchor=False)
+    st.write(
+        """
+                - Cycling
         """
     )

@@ -38,6 +38,6 @@ if 'shared_df_org_page_2' in st.session_state:
             mime="text/csv",
         )
 else:
-    st.write("No DataFrame found. Please run Page 1 first.")
+    st.write("No DataFrame found. Please upload the dataset in Exploratory data analysis🙂.")
 # Alternatively, you can use the get_clustered_data_download_link function
 #st.markdown(get_clustered_data_download_link(clustered_df), unsafe_allow_html=True)

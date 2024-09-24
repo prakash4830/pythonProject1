@@ -31,7 +31,7 @@ st.write('''
         -a given data set. Within the sum of squares (WSS) is defined as the sum of the squared distance between each 
         -member of the cluster and its centroid.
         ''')
-st.image("images/s_1.png")
+st.image("images/s_1.png", width=400, use_column_width=False)
 
 st.write('''
         Here, WSS is on the y-axis and number of clusters on the x-axis.
@@ -42,14 +42,14 @@ st.write('''
         We can randomly initialize two points called the cluster centroids. 
         Here, C1 and C2 are the centroids assigned randomly.
         ''')
-st.image("images/s_2.png")
+st.image("images/s_2.png", width=400, use_column_width=False)
 
 st.subheader("Step 3:")
 st.write('''
         Now the distance of each location from the centroid is measured, and each data point is assigned to the centroid
         , which is closest to it. 
         ''')
-st.image("images/s_3.png")
+st.image("images/s_3.png", width=400, use_column_width=False)
 
 st.subheader("Step 4:")
 st.write('''
@@ -60,7 +60,7 @@ st.subheader("Step 5:")
 st.write('''
         Reposition the random centroid to the actual centroid. 
         ''')
-st.image("images/s_4.png")
+st.image("images/s_4.png", width=400, use_column_width=False)
 
 st.subheader("Step 6:")
 st.write('''
@@ -71,14 +71,14 @@ st.subheader("Step 7:")
 st.write('''
         Reposition the random centroid to the actual centroid. 
         ''')
-st.image("images/s_5.png")
+st.image("images/s_5.png", width=400, use_column_width=False)
 
 st.subheader("Step 8:")
 st.write('''
         Once the cluster becomes static, the k-means algorithm is said to be converged. 
         The final cluster with centroids c1 and c2 is as shown below:
         ''')
-st.image("images/s_6.png")
+st.image("images/s_6.png", width=400, use_column_width=False)
 
 st.header("Following is the Data Dictionary for Credit Card dataset")
 st.markdown("""
