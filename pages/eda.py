@@ -5,30 +5,9 @@ import plotly.express as px
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import io
 
-def load_data():
-    if 'uploaded_file' not in st.session_state:
-        st.session_state.uploaded_file = None
-        st.session_state.df = None
-
-    uploaded_file = st.file_uploader("Upload your credit card dataset (CSV)", type=["csv"])
-
-    if uploaded_file is not None:
-        # If a new file is uploaded, update the session state
-        if st.session_state.uploaded_file != uploaded_file:
-            st.session_state.uploaded_file = uploaded_file
-            file_contents = uploaded_file.read()
-            st.session_state.file_contents = file_contents
-            st.session_state.df = pd.read_csv(io.BytesIO(file_contents))
-            st.success("File successfully uploaded and stored in session.")
-    elif st.session_state.uploaded_file is not None:
-        # If no new file is uploaded but we have a file in the session state, use that
-        st.info("Using previously uploaded file.")
-        st.session_state.df = pd.read_csv(io.BytesIO(st.session_state.file_contents))
-
-    return st.session_state.df
 
 # Use the function in your Streamlit app
-dataset_orig = load_data()
+dataset_orig = pd.read_csv("cc_general_project.csv")
 
 if dataset_orig is not None:
     st.write("Preview of the dataset:")
